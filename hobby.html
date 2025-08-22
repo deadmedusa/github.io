@@ -17,6 +17,26 @@
 			color: #007acc;
 			text-decoration: underline;
 		}
+		/* Fix for image display */
+		.keto-chef-img {
+			max-width: 300px;
+			height: auto;
+			border: 1px solid #ddd;
+			border-radius: 8px;
+			padding: 4px;
+		}
+		.image-placeholder {
+			width: 300px;
+			height: 200px;
+			background-color: #f0f0f0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 8px;
+			margin: 0 auto;
+			color: #666;
+			font-style: italic;
+		}
 	</style>
 </head>
 <body class="is-preload">
@@ -33,12 +53,12 @@
 	<nav id="nav">
 		<ul class="links">
 			<li><a href="index.html">Homepage</a></li>
-			<li><a href="https://www.credly.com/users/aleksandr-zydkov/badges">Professional certificates</a></li>
+			<li><a href="https://www.credly.com/users/aleksandr-zydkov/badges" target="_blank" rel="noopener noreferrer">Professional certificates</a></li>
 			<li><a href="projects.html">Training myself</a></li>
 			<li class="active"><a href="hobby.html">Hobby Project</a></li>
 		</ul>
 		<ul class="icons">
-			<li><a href="https://www.linkedin.com/in/aleksandr-zydkov/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+			<li><a href="https://www.linkedin.com/in/aleksandr-zydkov/" target="_blank" rel="noopener noreferrer" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
 			<li><a href="https://github.com/deadmedusa/" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 		</ul>
 	</nav>
@@ -52,9 +72,12 @@
 				<p>This is one of my fun side projects where I explore new ideas outside of professional training.</p>
 			</header>
 			
-			<!-- KetoChef Image -->
+			<!-- KetoChef Image with fallback -->
 			<div style="text-align:center; margin-bottom: 1.5em;">
-				<img src="images/KetoChef.png" alt="KetoChef Project" style="max-width:300px; height:auto;" />
+				<img src="images/KetoChef.png" alt="KetoChef Project" class="keto-chef-img" onerror="this.style.display='none'; document.getElementById('image-placeholder').style.display='flex';" />
+				<div id="image-placeholder" class="image-placeholder" style="display: none;">
+					KetoChef Image Preview
+				</div>
 				<p style="font-style:italic; color:#666; margin-top:0.5em;">
 					🍳 KetoChef — Cooking for people who'd rather code than cook 😅
 				</p>
@@ -68,7 +91,7 @@
 			</p>
 			<p>
 				Right now I’m experimenting with recipe storage, nutritional data, and even some possible integrations with APIs for meal planning and tracking.  
-				Whether it ends up being a serious app or just a fun experiment, at least it makes “cooking” less painful for me!
+				Whether it ends up being a serious app or just a fun experiment, at least it makes "cooking" less painful for me!
 			</p>
 
 			<!-- Try the app -->
@@ -76,10 +99,10 @@
 				<h2>🚀 Try KetoChef Beta</h2>
 				<p>
 					Want to help test KetoChef and shape it into something awesome?  
-					I’m offering <strong>30 free generations</strong> to anyone who tries it and gives feedback.  
+					I'm offering <strong>30 free generations</strong> to anyone who tries it and gives feedback.  
 				</p>
 				<p>
-					<a href="https://app--keto-chef-dee2df75.base44.app/" target="_blank" class="button">Try KetoChef</a>
+					<a href="https://app--keto-chef-dee2df75.base44.app/" target="_blank" rel="noopener noreferrer" class="button">Try KetoChef</a>
 				</p>
 
 				<!-- Feedback Form -->
@@ -111,11 +134,11 @@
 			<section>
 				<h3>Phone</h3>
 				<p>
-					<a href="https://wa.me/447860803046" target="_blank">
+					<a href="https://wa.me/447860803046" target="_blank" rel="noopener noreferrer">
 						(+44) 07860 803046
 						<i class="fab fa-whatsapp" style="color: #25D366; margin-left: 8px;"></i>
 					</a><br>
-					<a href="https://wa.me/79896400832" target="_blank">
+					<a href="https://wa.me/79896400832" target="_blank" rel="noopener noreferrer">
 						(+7) 989 6400832
 						<i class="fab fa-whatsapp" style="color: #25D366; margin-left: 8px;"></i>
 					</a>
@@ -123,12 +146,12 @@
 			</section>
 			<section>
 				<h3>Email</h3>
-				<p><a href="#">aleksandr@mamagayo.xyz</a></p>
+				<p><a href="mailto:aleksandr@mamagayo.xyz">aleksandr@mamagayo.xyz</a></p>
 			</section>
 			<section>
 				<h3>Social</h3>
 				<ul class="icons alt">
-					<li><a href="https://www.linkedin.com/in/aleksandr-zydkov" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://www.linkedin.com/in/aleksandr-zydkov" target="_blank" rel="noopener noreferrer" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
 					<li><a href="https://github.com/deadmedusa/" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 				</ul>
 			</section>
@@ -151,10 +174,20 @@
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
 <script>
+	// Function to toggle details
 	function toggleDetails(id) {
 		const el = document.getElementById(id);
 		el.style.display = el.style.display === 'block' ? 'none' : 'block';
 	}
+	
+	// Check if image loaded properly
+	document.addEventListener('DOMContentLoaded', function() {
+		const img = document.querySelector('.keto-chef-img');
+		if (img && img.naturalHeight === 0) {
+			img.style.display = 'none';
+			document.getElementById('image-placeholder').style.display = 'flex';
+		}
+	});
 </script>
 
 </body>
