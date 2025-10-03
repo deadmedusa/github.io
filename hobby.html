@@ -37,6 +37,18 @@
 			color: #666;
 			font-style: italic;
 		}
+		/* Video styling */
+		.video-attention-grabber {
+			text-align: center;
+			margin: 20px 0;
+		}
+		.video-attention-grabber video {
+			width: 300px;
+			max-width: 100%;
+			border-radius: 10px;
+			box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+			border: 3px solid #ff6b6b;
+		}
 	</style>
 </head>
 <body class="is-preload">
@@ -72,52 +84,64 @@
 				<p>This is one of my fun side projects where I explore new ideas outside of professional training.</p>
 			</header>
 			
-			<!-- KetoChef Image with fallback -->
-			<div style="text-align:center; margin-bottom: 1.5em;">
-				<img src="images/KetoChef.png" alt="KetoChef Project" class="keto-chef-img" onerror="this.style.display='none'; document.getElementById('image-placeholder').style.display='flex';" />
-				<div id="image-placeholder" class="image-placeholder" style="display: none;">
-					KetoChef Image Preview
-				</div>
+			<!-- GenieChef Video Only -->
+			<div class="video-attention-grabber">
+				<video autoplay muted loop playsinline>
+					<source src="https://raw.githubusercontent.com/deadmedusa/github.io/main/images/Cooking%20Genie.mp4" type="video/mp4">
+					Your browser doesn't support video tags.
+				</video>
 				<p style="font-style:italic; color:#666; margin-top:0.5em;">
-					🍳 KetoChef — Cooking for people who'd rather code than cook 😅
+					🧞‍♂️ Watch the magic happen! Your cooking genie is here to help!
 				</p>
 			</div>
 
+			<h2>From My Kitchen Nightmare to GenieChef: An Accidental App</h2>
+
 			<p>
-				<strong>KetoChef</strong> is a playful side project that started with two very different requests.  
-				My sister wanted a smart recipe assistant for people following ketogenic diets.  
-				I wanted something quick that could tell me how to throw together whatever leftovers were in my fridge — because honestly, I hate cooking but like good food.  
-				So, I thought: why not to try combine both ideas into one?  
+				Let's be real: I'm not a chef, and I'm definitely not a programmer. I'm just someone who was tired of staring into the fridge, wondering what to cook.
 			</p>
 			<p>
-				Right now I’m experimenting with recipe storage, nutritional data, and even some possible integrations with APIs for meal planning and tracking.  
-				Whether it ends up being a serious app or just a fun experiment, at least it makes "cooking" less painful for me!
+				<strong>GenieChef</strong> started as a desperate attempt to solve my own daily dilemma. I was struggling to come up with easy, tasty recipes (especially keto ones!), and I thought: <em>"There has to be a better way than eating scrambled eggs for the third day in a row."</em>
+			</p>
+			<p>
+				So, I decided to build a tiny helper for myself. I had no idea what I was doing, but I kept tinkering. And a funny thing happened... my little kitchen helper grew up.
+			</p>
+			<p>
+				Now, it's become <strong>GenieChef</strong>—a personal AI cooking assistant that feels a bit like magic. You tell it what you have, and it gives you a recipe. No stress, no fancy skills required.
+			</p>
+			<p>
+				<strong>And here's my secret:</strong> This app was built by someone who can barely boil water. If it works for me, it will definitely work for you!
 			</p>
 
 			<!-- Try the app -->
 			<article class="thumb">
-				<h2>🚀 Try KetoChef Beta</h2>
+				<h2>🚀 Be Part of the Kitchen Revolution!</h2>
 				<p>
-					Want to help test KetoChef and shape it into something awesome?  
-					I'm offering <strong>30 free generations</strong> to anyone who tries it and gives feedback.  
+					GenieChef is in its playful beta stage. It's clever, but it still has moments where it might suggest "ketchup ice cream" (I'm fixing that, I promise!).
 				</p>
 				<p>
-					<a href="https://app--keto-chef-dee2df75.base44.app/" target="_blank" rel="noopener noreferrer" class="button">Try KetoChef</a>
+					<strong>I need your help to make it truly awesome!</strong> Try the beta, and your feedback will directly guide me on what to build next. Let's create the cooking assistant we all wish we had!
+				</p>
+				<p>
+					<a href="https://geniechef.app/" target="_blank" rel="noopener noreferrer" class="button">Try GenieChef Beta</a>
 				</p>
 
 				<!-- Feedback Form -->
-				<h3 style="margin-top:1.5em;">💬 Share Your Feedback</h3>
+				<h3 style="margin-top:1.5em;">💬 Help Train the Cooking Genie!</h3>
+				<p style="text-align:center; color:#555;">
+					Your feedback is the cosmic energy that powers this genie! Tell me what you love, what you hate, and what magical features you'd like to see next.
+				</p>
 				<form method="post" action="mailto:aleksandr@mamagayo.xyz" enctype="text/plain" style="max-width:500px; margin:auto;">
 					<div style="margin-bottom:1em;">
 						<input type="text" name="name" placeholder="Your Name" required 
 						       style="width:100%; padding:10px; border-radius:8px; border:1px solid #ccc;" />
 					</div>
 					<div style="margin-bottom:1em;">
-						<textarea name="message" rows="5" placeholder="Your feedback..." required
+						<textarea name="message" rows="5" placeholder="Your magical feedback..." required
 						          style="width:100%; padding:10px; border-radius:8px; border:1px solid #ccc;"></textarea>
 					</div>
 					<div style="text-align:center;">
-						<button type="submit" class="button">Send Feedback</button>
+						<button type="submit" class="button">Send Magical Feedback</button>
 					</div>
 				</form>
 				<p style="text-align:center; margin-top:0.5em; font-size:0.9em; color:#555;">
@@ -179,15 +203,6 @@
 		const el = document.getElementById(id);
 		el.style.display = el.style.display === 'block' ? 'none' : 'block';
 	}
-	
-	// Check if image loaded properly
-	document.addEventListener('DOMContentLoaded', function() {
-		const img = document.querySelector('.keto-chef-img');
-		if (img && img.naturalHeight === 0) {
-			img.style.display = 'none';
-			document.getElementById('image-placeholder').style.display = 'flex';
-		}
-	});
 </script>
 
 </body>
