@@ -27,7 +27,7 @@
 	<!-- Intro -->
 	<div id="intro">
 		<h1>Training Myself</h1>
-		<p>I do not have yet real-time experience, therefore trying to have a fun at my free time...</p>
+		<p>I have little real-time experience; therefore, I am trying to have additional practice fun in my free time...</p>
 		<ul class="actions">
 			<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 		</ul>
@@ -122,13 +122,22 @@
 				<li>Design infrastructure for HA and disaster recovery with backups, auto-scaling.</li>
 			</ul>
 		</article>
-
-		<!-- Original CI/CD project -->
+		
+				<!-- Project 6 -->
 		<article class="thumb">
-			<h2>CI/CD pipeline</h2>
-			<p>Creating CI/CD pipeline on AWS using Jenkins, Tomcat, Docker, Ansible, Kubernetes. Got a lot of fun and finished full package of Earl Gray tea.</p>
-			<p>Code: <a href="https://github.com/deadmedusa/hello-world-project">Hello-World-Project</a></p>
-			<p>Potential updates: Project still in process, will put separate steps later.</p>
+			<h2>Serverless Image Processing Pipeline (AWS Lambda + S3)</h2>
+			<p>Automated, event-driven image thumbnail generation using AWS Lambda, S3, Python, Docker, and CloudWatch.</p>
+			<p class="toggle" onclick="toggleDetails('details6')">View Steps</p>
+			<ul id="details6" class="details">
+				<li>Design an event-driven architecture using S3 object upload triggers.</li>
+				<li>Develop a Python AWS Lambda function for image resizing using Pillow.</li>
+				<li>Build AWS-compatible Lambda dependencies with Docker and SAM build images.</li>
+				<li>Implement a multi-bucket workflow for original images and generated thumbnails.</li>
+				<li>Configure IAM roles with least-privilege permissions for secure S3 access.</li>
+				<li>Enable observability using CloudWatch Logs for debugging and monitoring.</li>
+				<li>Optimize performance using Lambda memory tuning and ephemeral storage.</li>
+				<li>Deliver a production-ready, scalable image-processing pipeline for real-world workloads.</li>
+			</ul>
 		</article>
 
 	</div>
