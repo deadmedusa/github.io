@@ -11,7 +11,201 @@
 		.details {
 			margin: 0.5em 0 1em 1.5em;
 			display: none;
+		<!DOCTYPE HTML>
+<html>
+<head>
+	<title>DevOps Engineer Projects | Kubernetes, CI/CD, Docker, Terraform</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="DevOps and Cloud engineer portfolio showcasing hands-on projects with Kubernetes, CI/CD pipelines, Docker, Terraform, GitHub Actions, cloud infrastructure, and automation." />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	<style>
+		.details {
+			margin: 0.5em 0 1em 1.5em;
+			display: none;
 		}
+		.toggle {
+			cursor: pointer;
+			color: #007acc;
+			text-decoration: underline;
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper" class="fade-in">
+
+	<!-- Intro -->
+	<div id="intro">
+		<h1>DevOps & Cloud Engineering Projects</h1>
+		<p>
+			Hands-on DevOps and Cloud engineering projects demonstrating CI/CD automation,
+			cloud-native Kubernetes deployments, containerization, and Infrastructure as Code.
+		</p>
+		<ul class="actions">
+			<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+		</ul>
+	</div>
+
+	<!-- Header -->
+	<header id="header">
+		<a href="index.html" class="logo">Aleksandr Zydkov</a>
+	</header>
+
+	<!-- Nav -->
+	<nav id="nav">
+		<ul class="links">
+			<li><a href="index.html">Homepage</a></li>
+			<li><a href="https://www.credly.com/users/aleksandr-zydkov/badges" target="_blank" rel="noopener noreferrer">Professional certificates</a></li>
+			<li class="active"><a href="projects.html">DevOps Projects</a></li>
+			<li><a href="hobby.html">Hobby Project</a></li>
+		</ul>
+		<ul class="icons">
+			<li><a href="https://www.linkedin.com/in/aleksandr-zydkov/" target="_blank" rel="noopener noreferrer" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+			<li><a href="https://github.com/deadmedusa/" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+		</ul>
+	</nav>
+
+	<!-- Main -->
+	<div id="main">
+
+		<!-- Docker -->
+		<article class="thumb">
+			<h2>Docker Web Application Deployment</h2>
+			<p>Containerization fundamentals demonstrated through building, running, and distributing Docker images.</p>
+			<p class="toggle" onclick="toggleDetails('docker-details')">View Steps</p>
+			<ul id="docker-details" class="details">
+				<li>Build custom Docker images for a static web application.</li>
+				<li>Run containers locally and expose services via browser.</li>
+				<li>Create Docker Compose setup for web and database services.</li>
+				<li>Push and pull images from Docker Hub.</li>
+			</ul>
+		</article>
+
+		<!-- CI/CD -->
+		<article class="thumb">
+			<h2>CI/CD Automation with GitHub Actions</h2>
+			<p>Automated CI/CD pipelines for application build, test, and deployment using GitHub Actions.</p>
+			<p class="toggle" onclick="toggleDetails('cicd-details')">View Steps</p>
+			<ul id="cicd-details" class="details">
+				<li>Create GitHub repositories and workflow definitions.</li>
+				<li>Automate builds and deployments for a Node.js application.</li>
+				<li>Implement CI and CD stages targeting cloud environments.</li>
+			</ul>
+		</article>
+
+		<!-- Cloud & Serverless -->
+		<article class="thumb">
+			<h2>Cloud Architecture & Serverless Systems</h2>
+			<p>Designing highly available, fault-tolerant, and serverless cloud architectures.</p>
+			<p class="toggle" onclick="toggleDetails('cloud-details')">View Steps</p>
+			<ul id="cloud-details" class="details">
+				<li>Design multi-AZ cloud architectures.</li>
+				<li>Implement load balancing and auto-scaling.</li>
+				<li>Build serverless applications using AWS Lambda or Azure Functions.</li>
+				<li>Use managed NoSQL databases for scalability.</li>
+			</ul>
+		</article>
+
+		<!-- Terraform -->
+		<article class="thumb">
+			<h2>Infrastructure Automation with Terraform & Ansible</h2>
+			<p>Infrastructure as Code project automating provisioning and application deployment.</p>
+			<p class="toggle" onclick="toggleDetails('terraform-details')">View Steps</p>
+			<ul id="terraform-details" class="details">
+				<li>Provision virtual machines using Terraform.</li>
+				<li>Parameterize infrastructure using variables.</li>
+				<li>Deploy Prestashop using Ansible automation.</li>
+			</ul>
+		</article>
+
+		<!-- Drupal -->
+		<article class="thumb">
+			<h2>Drupal High-Availability Cloud Platform</h2>
+			<p>Enterprise-style Drupal deployment using Terraform, Ansible, Docker, Kubernetes, and CI/CD.</p>
+			<p class="toggle" onclick="toggleDetails('drupal-details')">View Steps</p>
+			<ul id="drupal-details" class="details">
+				<li>Provision multi-AZ infrastructure with Terraform.</li>
+				<li>Configure Drupal servers with Ansible.</li>
+				<li>Optional containerization and Kubernetes deployment.</li>
+				<li>CI/CD pipelines with GitHub Actions.</li>
+				<li>Monitoring with Prometheus and Grafana.</li>
+			</ul>
+		</article>
+
+		<!-- Serverless pipeline -->
+		<article class="thumb">
+			<h2>Serverless Image Processing Pipeline (AWS)</h2>
+			<p>Event-driven cloud-native image processing using AWS Lambda, S3, Docker, and CloudWatch.</p>
+			<p class="toggle" onclick="toggleDetails('serverless-details')">View Steps</p>
+			<ul id="serverless-details" class="details">
+				<li>S3-triggered Lambda execution.</li>
+				<li>Image resizing with Python and Pillow.</li>
+				<li>IAM least-privilege configuration.</li>
+				<li>Logging and monitoring with CloudWatch.</li>
+			</ul>
+		</article>
+
+		<!-- Kubernetes flagship -->
+		<article class="thumb">
+			<h2>Cloud-Native DevOps CI/CD Platform on Kubernetes</h2>
+			<p>
+				End-to-end DevOps CI/CD platform demonstrating fully automated Docker image builds
+				for backend and frontend services, followed by automated cloud-native Kubernetes
+				deployments with versioned rolling updates triggered by Git commits.
+			</p>
+			<p class="toggle" onclick="toggleDetails('k8s-details')">View Steps</p>
+			<ul id="k8s-details" class="details">
+				<li>Develop backend and frontend services using Python (FastAPI).</li>
+				<li>Containerize applications with Docker.</li>
+				<li>Deploy to Kubernetes (k3s) using Deployments and Services.</li>
+				<li>CI pipelines with GitHub Actions and image pushes to GHCR.</li>
+				<li>Continuous Deployment using a self-hosted GitHub Actions runner.</li>
+				<li>Immutable image versioning using full Git commit SHA.</li>
+				<li>Rolling updates with zero downtime.</li>
+			</ul>
+		</article>
+
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<section class="split contact">
+			<section>
+				<h3>Email</h3>
+				<p><a href="mailto:zhidkov@hotmail.com">zhidkov@hotmail.com</a></p>
+			</section>
+		</section>
+	</footer>
+
+	<div id="copyright">
+		<ul><li>&copy; Aleksandr Zydkov, 2024</li></ul>
+	</div>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+	function toggleDetails(id) {
+		const el = document.getElementById(id);
+		el.style.display = el.style.display === 'block' ? 'none' : 'block';
+	}
+</script>
+
+</body>
+</html>
+}
 		.toggle {
 			cursor: pointer;
 			color: #007acc;
@@ -192,3 +386,4 @@
 
 </body>
 </html>
+
