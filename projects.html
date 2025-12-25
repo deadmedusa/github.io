@@ -1,217 +1,48 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
-	<title>Challenges</title>
+	<title>DevOps Projects | Docker, CI/CD, Kubernetes, Cloud</title>
+
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+	<meta name="description"
+	      content="Hands-on DevOps and cloud projects including Docker, CI/CD pipelines, Kubernetes, Terraform, Ansible and cloud infrastructure automation." />
+
+	<!-- Open Graph / LinkedIn Preview -->
+	<meta property="og:title" content="DevOps Projects | Docker, CI/CD & Kubernetes" />
+	<meta property="og:description"
+	      content="Hands-on DevOps projects demonstrating Docker, CI/CD pipelines, Kubernetes, Terraform, Ansible and cloud automation." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://mamagayo.xyz/projects.html" />
+	<meta property="og:image" content="https://mamagayo.xyz/images/devops-preview.png" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-	<style>
-		.details {
-			margin: 0.5em 0 1em 1.5em;
-			display: none;
-		<!DOCTYPE HTML>
-<html>
-<head>
-	<title>DevOps Engineer Projects | Kubernetes, CI/CD, Docker, Terraform</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<meta name="description" content="DevOps and Cloud engineer portfolio showcasing hands-on projects with Kubernetes, CI/CD pipelines, Docker, Terraform, GitHub Actions, cloud infrastructure, and automation." />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-	<style>
-		.details {
-			margin: 0.5em 0 1em 1.5em;
-			display: none;
-		}
-		.toggle {
-			cursor: pointer;
-			color: #007acc;
-			text-decoration: underline;
-		}
-	</style>
-</head>
 
-<body class="is-preload">
-
-<!-- Wrapper -->
-<div id="wrapper" class="fade-in">
-
-	<!-- Intro -->
-	<div id="intro">
-		<h1>DevOps & Cloud Engineering Projects</h1>
-		<p>
-			Hands-on DevOps and Cloud engineering projects demonstrating CI/CD automation,
-			cloud-native Kubernetes deployments, containerization, and Infrastructure as Code.
-		</p>
-
-		<p style="font-style: italic; color: #666;">
-        (Built while learning, experimenting, breaking things, fixing them,
-        and occasionally wondering why it didn’t work the first time.)
-    </p>
-		
-		<ul class="actions">
-			<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-		</ul>
-	</div>
-
-	<!-- Header -->
-	<header id="header">
-		<a href="index.html" class="logo">Aleksandr Zydkov</a>
-	</header>
-
-	<!-- Nav -->
-	<nav id="nav">
-		<ul class="links">
-			<li><a href="index.html">Homepage</a></li>
-			<li><a href="https://www.credly.com/users/aleksandr-zydkov/badges" target="_blank" rel="noopener noreferrer">Professional certificates</a></li>
-			<li class="active"><a href="projects.html">DevOps Projects</a></li>
-			<li><a href="hobby.html">Hobby Project</a></li>
-		</ul>
-		<ul class="icons">
-			<li><a href="https://www.linkedin.com/in/aleksandr-zydkov/" target="_blank" rel="noopener noreferrer" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-			<li><a href="https://github.com/deadmedusa/" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-		</ul>
-	</nav>
-
-	<!-- Main -->
-	<div id="main">
-
-		<!-- Docker -->
-		<article class="thumb">
-			<h2>Docker Web Application Deployment</h2>
-			<p>Containerization fundamentals demonstrated through building, running, and distributing Docker images.</p>
-			<p class="toggle" onclick="toggleDetails('docker-details')">View Steps</p>
-			<ul id="docker-details" class="details">
-				<li>Build custom Docker images for a static web application.</li>
-				<li>Run containers locally and expose services via browser.</li>
-				<li>Create Docker Compose setup for web and database services.</li>
-				<li>Push and pull images from Docker Hub.</li>
-			</ul>
-		</article>
-
-		<!-- CI/CD -->
-		<article class="thumb">
-			<h2>CI/CD Automation with GitHub Actions</h2>
-			<p>Automated CI/CD pipelines for application build, test, and deployment using GitHub Actions.</p>
-			<p class="toggle" onclick="toggleDetails('cicd-details')">View Steps</p>
-			<ul id="cicd-details" class="details">
-				<li>Create GitHub repositories and workflow definitions.</li>
-				<li>Automate builds and deployments for a Node.js application.</li>
-				<li>Implement CI and CD stages targeting cloud environments.</li>
-			</ul>
-		</article>
-
-		<!-- Cloud & Serverless -->
-		<article class="thumb">
-			<h2>Cloud Architecture & Serverless Systems</h2>
-			<p>Designing highly available, fault-tolerant, and serverless cloud architectures.</p>
-			<p class="toggle" onclick="toggleDetails('cloud-details')">View Steps</p>
-			<ul id="cloud-details" class="details">
-				<li>Design multi-AZ cloud architectures.</li>
-				<li>Implement load balancing and auto-scaling.</li>
-				<li>Build serverless applications using AWS Lambda or Azure Functions.</li>
-				<li>Use managed NoSQL databases for scalability.</li>
-			</ul>
-		</article>
-
-		<!-- Terraform -->
-		<article class="thumb">
-			<h2>Infrastructure Automation with Terraform & Ansible</h2>
-			<p>Infrastructure as Code project automating provisioning and application deployment.</p>
-			<p class="toggle" onclick="toggleDetails('terraform-details')">View Steps</p>
-			<ul id="terraform-details" class="details">
-				<li>Provision virtual machines using Terraform.</li>
-				<li>Parameterize infrastructure using variables.</li>
-				<li>Deploy Prestashop using Ansible automation.</li>
-			</ul>
-		</article>
-
-		<!-- Drupal -->
-		<article class="thumb">
-			<h2>Drupal High-Availability Cloud Platform</h2>
-			<p>Enterprise-style Drupal deployment using Terraform, Ansible, Docker, Kubernetes, and CI/CD.</p>
-			<p class="toggle" onclick="toggleDetails('drupal-details')">View Steps</p>
-			<ul id="drupal-details" class="details">
-				<li>Provision multi-AZ infrastructure with Terraform.</li>
-				<li>Configure Drupal servers with Ansible.</li>
-				<li>Optional containerization and Kubernetes deployment.</li>
-				<li>CI/CD pipelines with GitHub Actions.</li>
-				<li>Monitoring with Prometheus and Grafana.</li>
-			</ul>
-		</article>
-
-		<!-- Serverless pipeline -->
-		<article class="thumb">
-			<h2>Serverless Image Processing Pipeline (AWS)</h2>
-			<p>Event-driven cloud-native image processing using AWS Lambda, S3, Docker, and CloudWatch.</p>
-			<p class="toggle" onclick="toggleDetails('serverless-details')">View Steps</p>
-			<ul id="serverless-details" class="details">
-				<li>S3-triggered Lambda execution.</li>
-				<li>Image resizing with Python and Pillow.</li>
-				<li>IAM least-privilege configuration.</li>
-				<li>Logging and monitoring with CloudWatch.</li>
-			</ul>
-		</article>
-
-		<!-- Kubernetes flagship -->
-		<article class="thumb">
-			<h2>Cloud-Native DevOps CI/CD Platform on Kubernetes</h2>
-			<p>
-				End-to-end DevOps CI/CD platform demonstrating fully automated Docker image builds
-				for backend and frontend services, followed by automated cloud-native Kubernetes
-				deployments with versioned rolling updates triggered by Git commits.
-			</p>
-			<p class="toggle" onclick="toggleDetails('k8s-details')">View Steps</p>
-			<ul id="k8s-details" class="details">
-				<li>Develop backend and frontend services using Python (FastAPI).</li>
-				<li>Containerize applications with Docker.</li>
-				<li>Deploy to Kubernetes (k3s) using Deployments and Services.</li>
-				<li>CI pipelines with GitHub Actions and image pushes to GHCR.</li>
-				<li>Continuous Deployment using a self-hosted GitHub Actions runner.</li>
-				<li>Immutable image versioning using full Git commit SHA.</li>
-				<li>Rolling updates with zero downtime.</li>
-			</ul>
-		</article>
-
-	</div>
-
-	<!-- Footer -->
-	<footer id="footer">
-		<section class="split contact">
-			<section>
-				<h3>Email</h3>
-				<p><a href="mailto:zhidkov@hotmail.com">zhidkov@hotmail.com</a></p>
-			</section>
-		</section>
-	</footer>
-
-	<div id="copyright">
-		<ul><li>&copy; Aleksandr Zydkov, 2024</li></ul>
-	</div>
-
-</div>
-
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-<script>
-	function toggleDetails(id) {
-		const el = document.getElementById(id);
-		el.style.display = el.style.display === 'block' ? 'none' : 'block';
+	<!-- Structured Data: Personal SEO -->
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "Person",
+	  "name": "Aleksandr Zydkov",
+	  "jobTitle": "DevOps Engineer",
+	  "url": "https://mamagayo.xyz",
+	  "sameAs": [
+		"https://www.linkedin.com/in/aleksandr-zydkov/",
+		"https://github.com/deadmedusa/"
+	  ]
 	}
-</script>
+	</script>
 
-</body>
-</html>
-}
+	<style>
+		.details {
+			margin: 0.5em 0 1em 1.5em;
+			display: none;
+		}
 		.toggle {
 			cursor: pointer;
 			color: #007acc;
@@ -219,6 +50,7 @@
 		}
 	</style>
 </head>
+
 <body class="is-preload">
 
 <!-- Wrapper -->
@@ -227,7 +59,10 @@
 	<!-- Intro -->
 	<div id="intro">
 		<h1>Training Myself</h1>
-		<p>I have little real-time experience; therefore, I am trying to have additional practice fun in my free time...</p>
+		<p>
+			I am building hands-on DevOps and cloud projects in my free time to gain practical,
+			production-oriented experience and a deeper understanding of modern infrastructure.
+		</p>
 		<ul class="actions">
 			<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 		</ul>
@@ -263,80 +98,78 @@
 			<ul id="details1" class="details">
 				<li>Install Docker and build a custom image for a static HTML page.</li>
 				<li>Run the container and access the app via browser.</li>
-				<li>Create a Docker Compose file for a web and DB container (e.g., MySQL/PostgreSQL).</li>
-				<li>Push the image to a Docker Hub repository.</li>
-				<li>Pull the image on a new server and access it in the browser.</li>
+				<li>Create a Docker Compose file for a web and DB container.</li>
+				<li>Push the image to Docker Hub.</li>
+				<li>Deploy and run the image on a remote server.</li>
 			</ul>
 		</article>
 
 		<!-- Project 2 -->
 		<article class="thumb">
 			<h2>CI/CD Pipeline with GitHub Actions</h2>
-			<p>This project focuses on automating CI/CD for a Node.js application using GitHub Actions and deploying it to a cloud provider.</p>
+			<p>Automating CI/CD workflows using GitHub Actions and deploying applications to cloud environments.</p>
 			<p class="toggle" onclick="toggleDetails('details2')">View Steps</p>
 			<ul id="details2" class="details">
-				<li>Create a GitHub repository and fork a Node.js web app.</li>
-				<li>Set up GitHub Actions to automate deployment to AWS, Azure, or GCP.</li>
-				<li>Build both a CI (test/build) and CD (deploy) pipeline.</li>
+				<li>Create GitHub repositories and pipelines.</li>
+				<li>Automate build and test stages.</li>
+				<li>Deploy applications to AWS, Azure or GCP.</li>
 			</ul>
 		</article>
 
 		<!-- Project 3 -->
 		<article class="thumb">
 			<h2>Cloud Architecture & Serverless</h2>
-			<p>Exploring high availability, fault tolerance, and serverless computing using AWS or Azure.</p>
+			<p>Exploring high availability, fault tolerance and serverless computing.</p>
 			<p class="toggle" onclick="toggleDetails('details3')">View Steps</p>
 			<ul id="details3" class="details">
-				<li>Design a multi-AZ architecture using subnets across zones.</li>
+				<li>Design multi-AZ architectures.</li>
 				<li>Implement load balancing and auto-scaling.</li>
-				<li>Create a serverless app with AWS Lambda or Azure Functions triggered by S3/HTTP events.</li>
-				<li>Use a serverless database like DynamoDB or Cosmos DB.</li>
+				<li>Create serverless applications using AWS Lambda or Azure Functions.</li>
 			</ul>
 		</article>
 
 		<!-- Project 4 -->
 		<article class="thumb">
 			<h2>Terraform and Prestashop Automation</h2>
-			<p>Automating infrastructure provisioning and Prestashop deployment using Terraform and Ansible.</p>
+			<p>Infrastructure provisioning and application deployment using Terraform and Ansible.</p>
 			<p class="toggle" onclick="toggleDetails('details4')">View Steps</p>
 			<ul id="details4" class="details">
-				<li>Install Terraform locally.</li>
-				<li>Create a Terraform config to provision a VM.</li>
-				<li>Use variables for size and region.</li>
-				<li>Deploy Prestashop with DB using Terraform and Ansible.</li>
+				<li>Provision infrastructure with Terraform.</li>
+				<li>Deploy Prestashop with Ansible automation.</li>
 			</ul>
 		</article>
 
 		<!-- Project 5 -->
 		<article class="thumb">
 			<h2>Drupal Cloud Infrastructure</h2>
-			<p>High availability Drupal deployment using Terraform, Ansible, Docker, Kubernetes, and CI/CD tools.</p>
+			<p>High availability Drupal deployment using Terraform, Ansible, Docker, Kubernetes and CI/CD tools.</p>
 			<p class="toggle" onclick="toggleDetails('details5')">View Steps</p>
 			<ul id="details5" class="details">
-				<li>Provision infrastructure across multi-AZ using Terraform (VMs, RDS, ALB, security, VPC).</li>
-				<li>Configure Drupal app servers with Ansible (PHP, Apache, DB, rsync).</li>
-				<li>Optional: Containerize with Docker, use Compose locally, deploy via Kubernetes.</li>
-				<li>Create CI/CD pipelines with GitHub Actions (build, test, deploy to staging & prod).</li>
-				<li>Implement centralized logging with ELK or cloud-native options.</li>
-				<li>Monitor with Prometheus + Grafana (CPU, memory, DB, LB, alerts).</li>
-				<li>Design infrastructure for HA and disaster recovery with backups, auto-scaling.</li>
+				<li>Provision multi-AZ infrastructure with Terraform.</li>
+				<li>Configure servers using Ansible.</li>
+				<li>Implement CI/CD pipelines.</li>
+				<li>Monitoring and logging with Prometheus, Grafana and ELK.</li>
 			</ul>
 		</article>
-		
-				<!-- Project 6 -->
+
+		<!-- Project: Kubernetes CI/CD Platform -->
 		<article class="thumb">
-			<h2>Serverless Image Processing Pipeline (AWS Lambda + S3)</h2>
-			<p>Automated, event-driven image thumbnail generation using AWS Lambda, S3, Python, Docker, and CloudWatch.</p>
-			<p class="toggle" onclick="toggleDetails('details6')">View Steps</p>
+			<h2>Cloud-Native DevOps CI/CD Platform (Kubernetes)</h2>
+			<p>
+				A production-style DevOps project focused on building, deploying and operating
+				a Kubernetes-based CI/CD platform with real-world constraints.
+			</p>
+			<p class="toggle" onclick="toggleDetails('details6')">View Details</p>
 			<ul id="details6" class="details">
-				<li>Design an event-driven architecture using S3 object upload triggers.</li>
-				<li>Develop a Python AWS Lambda function for image resizing using Pillow.</li>
-				<li>Build AWS-compatible Lambda dependencies with Docker and SAM build images.</li>
-				<li>Implement a multi-bucket workflow for original images and generated thumbnails.</li>
-				<li>Configure IAM roles with least-privilege permissions for secure S3 access.</li>
-				<li>Enable observability using CloudWatch Logs for debugging and monitoring.</li>
-				<li>Optimize performance using Lambda memory tuning and ephemeral storage.</li>
-				<li>Deliver a production-ready, scalable image-processing pipeline for real-world workloads.</li>
+				<li>Kubernetes (k3s) cluster running on Linux.</li>
+				<li>Backend and frontend services deployed via custom Helm charts.</li>
+				<li>Sidecar container pattern within a single Pod.</li>
+				<li>CI/CD pipelines implemented with GitHub Actions.</li>
+				<li>Self-hosted GitHub Actions runner for deployments.</li>
+				<li>Immutable Docker images versioned by full Git commit SHA.</li>
+				<li>Readiness and liveness probes for traffic control.</li>
+				<li>CPU and memory resource requests and limits.</li>
+				<li>Debugging ImagePullBackOff, Helm value conflicts and rollout issues.</li>
 			</ul>
 		</article>
 
@@ -348,29 +181,31 @@
 			<section>
 				<h3>Phone</h3>
 				<p>
-					<a href="https://wa.me/447860803046" target="_blank" rel="noopener noreferrer">
+					<a href="https://wa.me/447860803046" target="_blank">
 						(+44) 07860803046
-						<i class="fab fa-whatsapp" style="color: #25D366; margin-left: 8px;"></i>
+						<i class="fab fa-whatsapp" style="color:#25D366;margin-left:8px;"></i>
 					</a>
 				</p>
 			</section>
 			<section>
 				<h3>Email</h3>
-				<p><a href="mailto:zhidkov@hotmail.com">zhidkov@hotmail.com</a></p>
+				<p><a href="mailto:aleksandr@mamagayo.xyz">aleksandr@mamagayo.xyz</a></p>
 			</section>
 			<section>
 				<h3>Social</h3>
 				<ul class="icons alt">
-					<li><a href="https://www.linkedin.com/in/aleksandr-zydkov" target="_blank" rel="noopener noreferrer" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-					<li><a href="https://github.com/deadmedusa/" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="https://www.linkedin.com/in/aleksandr-zydkov" class="icon brands alt fa-linkedin"></a></li>
+					<li><a href="https://github.com/deadmedusa/" class="icon brands alt fa-github"></a></li>
 				</ul>
 			</section>
 		</section>
 	</footer>
 
-	<!-- Copyright -->
 	<div id="copyright">
-		<ul><li>&copy; Aleksandr Zydkov, 2024</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+		<ul>
+			<li>&copy; Aleksandr Zydkov, 2024</li>
+			<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+		</ul>
 	</div>
 
 </div>
@@ -383,6 +218,7 @@
 <script src="assets/js/breakpoints.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
+
 <script>
 	function toggleDetails(id) {
 		const el = document.getElementById(id);
@@ -392,5 +228,3 @@
 
 </body>
 </html>
-
-
