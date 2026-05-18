@@ -173,6 +173,26 @@
 			</ul>
 		</article>
 
+		<!-- Project: Kubernetes Security & Reliability -->
+		<article class="thumb">
+			<h2>Kubernetes Security, Observability & Reliability</h2>
+			<p>
+				An advanced Kubernetes lab extending a production-style cluster with security enforcement,
+				runtime threat detection, chaos engineering, disaster recovery and progressive delivery.
+			</p>
+			<p class="toggle" onclick="toggleDetails('details7')">View Details</p>
+			<ul id="details7" class="details">
+				<li>Policy enforcement with OPA Gatekeeper preventing root container execution and enforcing CPU and memory resource limits across production namespace.</li>
+				<li>Runtime security monitoring with Falco detecting suspicious syscalls, unexpected container behaviour and unauthorised Kubernetes API access.</li>
+				<li>Chaos Engineering with Chaos Mesh validating cluster resiliency through controlled pod failure experiments with automated recovery observation.</li>
+				<li>Disaster recovery with Velero and self-hosted MinIO object storage providing automated daily backups and full namespace restore capability.</li>
+				<li>Progressive delivery with Argo Rollouts implementing canary deployments with automated traffic shifting (20% → 50% → 100%).</li>
+				<li>GitOps-driven recovery demonstrated by ArgoCD automatically reconciling deleted resources from Git source of truth.</li>
+				<li>Full observability stack with Prometheus, Grafana, Loki, Promtail and Alertmanager covering metrics, logs and alerting.</li>
+				<li>Secrets management with HashiCorp Vault and Sealed Secrets for secure GitOps-compatible secret storage.</li>
+			</ul>
+		</article>
+
 	</div>
 
 	<!-- Footer -->
